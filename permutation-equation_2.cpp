@@ -8,6 +8,14 @@ vector<string> split_string(string);
 vector<int> permutationEquation(vector<int> p) {
     int n = p.size();
     vector<int> t1(n), t2(n);
+    /*
+    * p[p[y]]=x   ==(p[y]=a)==>  p[a] = x  -(1)
+    * 令数组为：t1[x] = a  -(2)
+    * 则 p[y] = t1[x]
+    * 由(1)(2)  p[a]=x ==> t1[x]=a
+    * 所以：p[y] = t1[x] ==> t1[t1[x]] = y
+    * 得证
+    */
     for(int i = 0; i < n; i++){
         t1[p[i]-1] = i + 1;
     }
