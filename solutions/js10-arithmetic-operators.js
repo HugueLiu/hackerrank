@@ -52,3 +52,11 @@ function getPerimeter(length, width) {
     return perimeter;
 }
 
+
+function main() {
+    const length = +(readLine());
+    const width = +(readLine());
+    
+    console.log(getArea(length, width));
+    console.log(getPerimeter(length, width));
+}
