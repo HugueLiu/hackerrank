@@ -1,2 +1,11 @@
+# vscode configure files
 .vscode
+
+# c++
 main
+
+# test sample 
+test_sample
+
+# test of javascript
+*.html
